@@ -1,0 +1,64 @@
+body {
+  background-color : grey;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+#wrapper {
+  width: 80%;
+  margin: auto;
+  background-color:tan;
+  box-shadow: 5px 20px;
+}
+
+divs {
+  margin: auto;
+  width: 90%;
+}
+
+.itembox {
+    border-style: solid;
+    border-radius: 6px; 
+    box-shadow: 2px 2px; 
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+
+.favorite {
+    border-style: dotted;
+    border-radius: 60px; 
+    box-shadow: 2px 2px; 
+    background-color: white;
+    color: black;
+    padding: 3px;
+}
+
+ul.b {
+  list-style-type: upper-roman;
+}
+
+ol {
+  list-style-type: circle;
+}
+ul.a {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+}
+
+li.a {
+  float: left;
+}
+
+a {
+  display:block;
+  margin: 10px;
+  padding: 2px;
+  background-color: #dddddd;
+}
+a:link {
+  text-decoration: none;
+}
