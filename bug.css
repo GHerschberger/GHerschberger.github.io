@@ -65,8 +65,8 @@ footer { background-color: #FFFFCC;
 }
 
 /*Add your mobile CSS rules below*/
-
-@media only screen and (max-width: 720px) {
+@media only screen and (orientation: portrait) 
+{
 header, nav, main, footer { display: block; } 
 * {box-sizing: border-box; }
 body { background-color: #330000;
