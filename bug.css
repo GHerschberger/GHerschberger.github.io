@@ -65,7 +65,7 @@ footer { background-color: #FFFFCC;
 }
 
 /*Add your mobile CSS rules below*/
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 760px) {
 header, nav, main, footer { display: block; } 
 * {box-sizing: border-box; }
 body { background-color: #330000;
@@ -98,6 +98,8 @@ h2, h3, h4{
 }
 p{
   font-size: 1.5em;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 nav { padding-top: 60px;
@@ -114,6 +116,7 @@ nav li { padding-bottom: 5px;
       padding-left: 5px;
        font-weight: bold;
        border-style: solid none solid none;
+       color: #330000;
 }
 nav li:hover { 
        background: #90745D;
