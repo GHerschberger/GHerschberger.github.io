@@ -94,12 +94,18 @@ h1 { background-image: url();
 }
 h2, h3, h4{
   text-align: center;
+  font-size: 1.5em;
 }
+p{
+  font-size: 1.5em;
+}
+
 nav { padding-top: 60px;
       float: none;
-      width: 200px; 
+      width: auto; 
       margin-left: 0px;
-      
+      font-size: 2em;
+      color: #330000;
 }
 nav ul { list-style-type: none; 
        padding-left: 0;
@@ -124,11 +130,15 @@ main { background-color: #FFFFCC;
           margin-left: 0px;
           padding: 1px 0px 20px 0px;   
 		  min-height: 300px;
+      width: 100%;
 }
 main img { float: none;
-              padding: 20px;
+              padding-left:  20px;
+              padding-right: 20px;
               size: auto;
+              width: 100%;
 }
+
 
 footer { background-color: #FFFFCC;
        margin-left: 0px;
