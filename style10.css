@@ -1,8 +1,12 @@
 a{
-  text-decoration: none;
-  font-size: 2em;
-  padding: 3px;
-}
-table, td, tr, th{
-  border: 1px black solid;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 3px;
+  }
+  table, td, tr, th{
+    border: 1px black solid;
+    border-spacing: 0px;
+  }
+img{
+  width: 60%;
 }
