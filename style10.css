@@ -1,0 +1,8 @@
+a{
+  text-decoration: none;
+  font-size: 2em;
+  padding: 3px;
+}
+table, td, tr, th{
+  border: 1px black solid;
+}
