@@ -9,6 +9,9 @@ img {
 #nav, #sidebar, .news{
   display: none;
 }
+a{
+  text-decoration: none;
+}
 p {
   font-size: 1.25em;
 }
