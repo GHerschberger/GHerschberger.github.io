@@ -3,7 +3,7 @@ a{
   font-size: 2em;
   padding: 3px;
 }
-table, td, tr, th{
+table{
   border: 1px black solid;
   border-spacing: 0px;
 }
