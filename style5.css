@@ -39,25 +39,35 @@ divs {
 ul.b {
   list-style-type: upper-roman;
 }
-
+nav{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: solid;
+  border-radius: 6px; 
+  box-shadow: 2px 2px; 
+  background-color: red;
+  color: white;
+  padding: 3px;
+}
 ol {
   list-style-type: circle;
 }
-ul.a {
+nav ul {
   list-style-type: none;
   display: inline;
   padding: 5px;
 }
 
-li.a {
-  float: left;
+nav li {
+  font-size: 1.3em;
+  display: inline;
 }
 
 a {
-  display:block;
+  color: white;
   margin: 10px;
   padding: 2px;
-  background-color: #dddddd;
 }
 a:link {
   text-decoration: none;
