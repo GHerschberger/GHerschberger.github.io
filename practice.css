@@ -3,5 +3,21 @@ H1{
 }
 
 body{
-  background-color: gray;
+  background-color: rgba(11, 194, 226, 0.596);
+  color: white;
+}
+footer{
+  position: absolute;
+  bottom: 2px;
+}
+.a{
+  color: blue;
+}
+button:hover{
+  color:red;
+  background-color: white;
+}
+p:hover{
+  color: black;
+  text-align: center;
 }
