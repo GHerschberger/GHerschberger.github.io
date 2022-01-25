@@ -10,9 +10,6 @@ footer{
   position: absolute;
   bottom: 2px;
 }
-.a{
-  color: blue;
-}
 button:hover{
   color:red;
   background-color: white;
