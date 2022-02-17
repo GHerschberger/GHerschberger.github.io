@@ -17,3 +17,16 @@ img{
 table{
   margin: auto;
 }
+
+.cowboy td, th{
+  border-bottom: 1px black solid;
+  border-spacing: 0px;
+}
+.cowboy th{
+  border-right: 1px black solid;
+  border-spacing: 0px;
+}
+.home td{
+  border-right: 1px black solid;
+  border-spacing: 0px;
+}
