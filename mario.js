@@ -1,6 +1,5 @@
 height = parseInt(prompt("please enter a pyramid height"));
 
-// drawPyramid(height);
 // printPyramid(height);
 
 
