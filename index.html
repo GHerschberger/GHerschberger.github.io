@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>//call pyramid draw function and read user input for height
+//draw the pyramid using user input
+function determineHeightAndThenDrawPyramid(height, drawPyramid()){
+  height = parseInt(document.getElementById("height").value);
+  drawPyramid(height);
+}
+
+
+//print the pyramid in the document with a console prompt
+function drawPyramid(height) {
+    let space = ".";
+    let brick = "#";
+    let rows = height;
+
+    let layer = space;
+    for (let i = 1; i<rows; i++){
+      layer += space;
+    }
+    layer += brick;
+      for(let j=0; j<rows; j++){
+        layer = layer.substring(1)
+        layer += (brick);
+
+         document.write( layer + " <br>");
+    }
+}
+  </script>
     <style>
+
         #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
             font-family: "Courier New", monospace;
+            text-align: center;
         }
     </style>
+
 </head>
-<body>
-    <h1>Mario 2</h1>
-    <h3>
-        Behold this wonderful pyramid:
-    </h3>
+<body >
+    <h1>Mario 3</h1>
 
-    <div id="pyramid">
-        <!-- Our pyramid will go inside here -->
+    <br>
 
-    </div>
+    <p>When you say</p>
 
-    <script src="mario.js"></script>
+    <p><strong>Draw a pyramid</strong></p>
+
+    <p>I say:</p>
+
+    <br>
+
+    <label>How high?</label>
+
+    <input type="text" id="height"/>
+</div>
+    <br><br>
+
+    <button onclick="determineHeightAndThenDrawPyramid()">Draw a pyramid</button>
+
+    <br><br>
+
+    <div id="pyramid"></div>
+
 </body>
 </html>

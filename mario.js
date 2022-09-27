@@ -1,50 +1,58 @@
-height = parseInt(prompt("please enter a pyramid height"));
+// height = parseInt();
 
-// printPyramid(height);
+// // printPyramid(height);
 
-
-function drawPyramid(height) {
-    let space = ".";
-    let brick = "#";
-    let rows = height;
-
-    let layer = space;
-    for (let i = 1; i<rows; i++){
-      layer += space;
-    }
-    layer += brick;
-      for(let j=0; j<rows; j++){
-        layer = layer.substring(1)
-        layer += (brick);
-
-         document.write( layer + " <br>");
-    }
-}
+// //call pyramid draw function and read user input for height
+// //draw the pyramid using user input
+// function determineHeightAndThenDrawPyramid(height, drawPyramid()){
+//   height = parseInt(document.getElementById("height").value);
+//   drawPyramid(height);
+// }
 
 
-// function printPyramid(height) {
+// //print the pyramid in the document with a console prompt
+// function drawPyramid(height) {
 //     let space = ".";
 //     let brick = "#";
 //     let rows = height;
 
 //     let layer = space;
-//     for (let i = 1; i<rows ; i++){
+//     for (let i = 1; i<rows; i++){
 //       layer += space;
 //     }
 //     layer += brick;
 //       for(let j=0; j<rows; j++){
 //         layer = layer.substring(1)
 //         layer += (brick);
-//         console.log(layer);
-//     }
 
+//          document.write( layer + " <br>");
+//     }
 // }
 
-const para = document.createElement("p");
+// //Print the pyramid in the console
+// // function printPyramid(height) {
+// //     let space = ".";
+// //     let brick = "#";
+// //     let rows = height;
 
-const node = document.createTextNode(drawPyramid(height) );
+// //     let layer = space;
+// //     for (let i = 1; i<rows ; i++){
+// //       layer += space;
+// //     }
+// //     layer += brick;
+// //       for(let j=0; j<rows; j++){
+// //         layer = layer.substring(1)
+// //         layer += (brick);
+// //         console.log(layer);
+// //     }
 
-// para.appndChild(node);
-const element = document.getElementById("pyramid");
+// // }
 
-element.appendChild(para);
+// const para = document.createElement("p");
+
+// const node = document.createTextNode(drawPyramid(height) );
+
+// // para.appndChild(node);
+// const element = document.getElementById("pyramid");
+
+// element.appendChild(para);
