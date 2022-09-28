@@ -5,9 +5,9 @@
 //draw the pyramid using user input
 function determineHeightAndThenDrawPyramid(dr){
   height = document.getElementById("height").value;
-  drawPyramid(height);
+  let x = drawPyramid(height);
+  document.getElementById("pyramid").innerHTML = x;
 }
-
 
 //print the pyramid in the document with a console prompt
 function drawPyramid(height) {
@@ -19,13 +19,15 @@ function drawPyramid(height) {
     for (let i = 1; i<rows; i++){
       layer += space;
     }
-    layer += brick;
-      for(let j=0; j<rows; j++){
+    layer += (brick) + brick;
+    let x = layer;
+      for(let j=0; j<rows-1; j++){
         layer = layer.substring(1)
         layer += (brick);
 
-         document.write( layer + " <br>");
+        x += ( "<p>" + layer + "</p>" + " </br>");
     }
+  return x;
 }
   </script>
     <style>
