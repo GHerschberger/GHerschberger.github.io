@@ -1,37 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>//call pyramid draw function and read user input for height
-//draw the pyramid using user input
-function determineHeightAndThenDrawPyramid(dr){
-  height = document.getElementById("height").value;
-  let x = drawPyramid(height);
-  document.getElementById("pyramid").innerHTML = x;
-}
-
-//print the pyramid in the document with a console prompt
-function drawPyramid(height) {
-    let space = ".";
-    let brick = "#";
-    let rows = height;
-
-    let layer = space;
-    for (let i = 1; i<rows; i++){
-      layer += space;
-    }
-    layer += (brick) + brick;
-    let x = layer;
-      for(let j=0; j<rows-1; j++){
-        layer = layer.substring(1)
-        layer += (brick);
-
-        x += ( "<p>" + layer + "</p>" + " </br>");
-    }
-  return x;
-}
-  </script>
     <style>
-
         #pyramid {
             line-height: 0;
             font-size: 30px;
@@ -41,33 +11,40 @@ function drawPyramid(height) {
             font-family: "Courier New", monospace;
             text-align: center;
         }
+
+        .invalid-field {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+        }
     </style>
-
 </head>
-<body >
-    <h1>Mario 3</h1>
-
-    <br>
+<body>
+    <h1>Mario 4</h1>
 
     <p>When you say</p>
-
     <p><strong>Draw a pyramid</strong></p>
-
     <p>I say:</p>
-
     <br>
 
-    <label>How high?</label>
-
-    <input type="text" id="height"/>
-</div>
-    <br><br>
-
-    <button onclick="determineHeightAndThenDrawPyramid()">Draw a pyramid</button>
+    <form id="draw-form">
+        <label>
+            How high?
+            <input type="text" id="height"/>
+            <label class="error-message">
+                <!-- If there was a user error, we will put a message in here -->
+            </label>
+        </label>
+        <br><br>
+        <input type="submit" value="Draw a pyramid"/>
+    </form>
 
     <br><br>
 
     <div id="pyramid"></div>
 
+    <script src="mario.js"></script>
 </body>
 </html>
