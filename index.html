@@ -1,50 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <style>
-        #pyramid {
-            line-height: 0;
-            font-size: 30px;
-        }
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/personal.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Gary's Practice Site</title>
 
-        body {
-            font-family: "Courier New", monospace;
-            text-align: center;
-        }
+  </head>
 
-        .invalid-field {
-            border: 1px solid red;
-        }
 
-        .error-message {
-            color: red;
-        }
-    </style>
-</head>
 <body>
-    <h1>Mario 41</h1>
+    <main><header>
+      <h1>My Career and Life Goals Around Code</h1>
+       </header>
+       <nav>
+        <ul class="nav-list">
+          <li><strong>Github link:&nbsp</strong><a href="Https://github.com/GHerschberger">GHerschberger</a></li>
+          <li style="border-left: black 1px solid; padding-left: 2px;"><strong>Github.io Portfolio Site:&nbsp</strong><a href="Https://GHerschberger.github.io">Github.io</a></li>
+        </ul>
+      </nav>
 
-    <p>When you say</p>
-    <p><strong>Draw a pyramid</strong></p>
-    <p>I say:</p>
-    <br>
+      <article class="grid-wrap">
+        <h2 class="subhead">Career</h2>
+        <p class="text">My goal is to develop and design high quality websites and applications for businesses and organizations. Solving problems and providing solutions is what interested me about programming in the first place. I love being able to combine high quality visuals with performant solutions.</p>
+        <img src="images/photoTwo.jpg" alt="Third Image" class="image">
+        </article>
+      <article class="grid-wrap">
+        <h2 class="subhead">Code and Design for Fun</h2> 
+        <p class="text">Because of some of the amazing projects I've seen come out of the indie and fan game markets, as well as in art and music, I would love to be able to express myself and produce equally impressive and fun experiences. Fan games and rom hacks based on old 16 bit and 32 bit consoles are just as fun and interesting as their official versions, and often more so than the new forms of media that have cost attached.</p>
+        <img src="images/photoOne.jpg" alt="First Image" class="image">
 
-    <form id="draw-form">
-        <label>
-            How high?
-            <input type="text" id="height"/>
-            <label class="error-message">
-                <!-- If there was a user error, we will put a message in here -->
-            </label>
-        </label>
-        <br><br>
-        <input type="submit" value="Draw a pyramid"/>
-    </form>
+      </article>
+      <article class="grid-wrap">
+        <h2 class="subhead">Open Source</h2>
+        <p id="special-text">On top of writing code and designing for personal projects, I would also like to help contribute to the open source community. I believe in the ideas behind open source software and use a lot of open source software projects daily. As a result I would like to help push these ideas forward and help make better software available to everyone.</p>
+      </article>
+  <footer>&copy Gary Herschberger 2023</footer>
+   </main>
 
-    <br><br>
-
-    <div id="pyramid"></div>
-
-    <script src="mario.js"></script>
 </body>
 </html>
